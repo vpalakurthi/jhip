@@ -12,6 +12,6 @@ node {
     }
     
     stage('deploy') {
-        sh "kubectl apply -f jhip"
+        sh "kubectl apply -f jhip/deployment.yml --kubeconfig=kubeconfig""
     }   		
 }
