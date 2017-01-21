@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "jhipsterVersion": "3.12.2",
+    "baseName": "jhip",
+    "packageName": "com.demo.ms.app",
+    "packageFolder": "com/demo/ms/app",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "hibernateCache": "hazelcast",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "jwtSecretKey": "50a70146b1e359a759cfb277c2abe05a13220c99",
+    "enableTranslation": false,
+    "applicationType": "microservice",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "skipClient": true,
+    "skipUserManagement": true,
+    "appsFolders": [
+      "jhip"
+    ],
+    "directoryPath": "../",
+    "dockerRepositoryName": "vpalakurthi",
+    "dockerPushCommand": "docker push",
+    "kubernetesNamespace": "default"
+  }
+}
