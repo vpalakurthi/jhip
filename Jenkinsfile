@@ -1,3 +1,5 @@
+
+
 node {
     stage('checkout') {
         checkout scm
@@ -11,7 +13,8 @@ node {
         sh "./mvnw package -Pprod -DskipTests"
     }
     
-    stage('deploy') {
+    stage('deploy') 
+    withKubernetes(serverUrl: "https://192.168.42.33:30000', credentialsId:'kubeadmin'){
         sh "kubectl apply -f jhip/deployment.yml --kubeconfig=kubeconfig"
     }   		
 }
