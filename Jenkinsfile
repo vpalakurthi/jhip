@@ -13,6 +13,6 @@ node {
     }
     
     stage('deploy') {
-        sh "kubectl --namespace=default apply -f jhip/jhip-deployment.yml"
+        sh "kubectl exec --namespace=default apply -f jhip/jhip-deployment.yml"
     }   		
 }
